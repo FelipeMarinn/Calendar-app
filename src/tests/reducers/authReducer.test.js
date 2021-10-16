@@ -40,7 +40,7 @@ describe('authReducer', () => {
         const action = { type: types.authLogout }
         const state = authReducer( initState, action )
 
-        expect( state ).toEqual({ ...state, checking: false })
+        expect( state ).toEqual({ checking: false, error: false })
     })
 
     test('error debe de ser true y checking false', ()=> {

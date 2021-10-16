@@ -19,7 +19,10 @@ const customStyles = {
       transform: 'translate(-50%, -50%)',
     },
 };
-Modal.setAppElement('#root'); // div root del html
+if ( process.env.NODE_ENV !== 'test') {
+    Modal.setAppElement('#root'); // div root del html b
+}
+
 
 const now = moment().minutes(0).seconds(0).add(1, 'hours')
 const after = now.clone().add(1, 'hours')

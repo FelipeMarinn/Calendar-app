@@ -31,7 +31,7 @@ export const RegisterScreen = () => {
 
 
     return (
-        <div className="container login-container">
+        <div className="container login-container register">
             <div className="row">
                 <div className="col-md-6 text-center m-auto login-form-2">
                     <h3>Registro</h3>
